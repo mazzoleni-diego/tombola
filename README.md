@@ -43,7 +43,7 @@ int main() {
         for (int i = 0; i < 15; )
         {
             int numero = rand() % 90 + 1;
-            int colonna = (numero - 1) / 10;
+            int colonna = (numero) / 10;
             
             if (decine[colonna] >= 3)
                 continue;
@@ -70,7 +70,7 @@ int main() {
         {
             for (int i = 0; i < 15 && inseriti < 15; i++)
             {
-                int colonna = (n[i] - 1) / 10;
+                int colonna = (n[i]) / 10;
                 int cont = 0;
                 for (int r = 0; r < 3; r++)
                     if (cartella[r][colonna] != 0)
