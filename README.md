@@ -49,14 +49,18 @@ int main() {
                 continue;
                 
             int j;
-            for ( j = 0; j < i; j++)
+            for ( j = 0; j < 15; j++)
                 if (n[j] == numero)
                     break;
                     
             if (j < i)
-                continue; 
                 
+                {
+                i--;
+                continue;
+                }
             n[i] = numero;
+                
             decine[colonna]++;
             i++;
         }
