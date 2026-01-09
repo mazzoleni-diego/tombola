@@ -124,7 +124,8 @@ int main() {
     {
         
         int numero;
-        do {
+        do 
+        {
             numero = rand() % 90 + 1;
         } while (estratti[numero] == 1);
         
